@@ -9,4 +9,5 @@ If you would like to automate the process:
             start <\link to your favourite program>
     2. Create a shortcut of the program that is linked above.
     3. Set the address of the shortcut to the batch file we just created.
+
 Now everytime you open your favourite program, you are indirectly calling the python script which is collecting and saving data for you.
