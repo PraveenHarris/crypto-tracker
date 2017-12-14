@@ -3,7 +3,7 @@
 This Python script allows you to track the growth of the top cryptocurrencies (Bitcoin, Ethereum, Ethereum Classic, Ripple, Litecoin, Dash, NEO, EOS and Lisk) on your local computer. 
 
 If you would like to automate the process:
-    i. Create a Windows batch file that calls the python script and your favourite program that you use on a daily basis. This can be done simply by typing the following:
+    Markup: 1. Create a Windows batch file that calls the python script and your favourite program that you use on a daily basis. This can be done simply by typing the following:
             @echo off
             python <\link to the python file>
             start <\link to your favourite program>
