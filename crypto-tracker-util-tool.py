@@ -1,4 +1,4 @@
-# import dependancies
+# import dependencies
 import requests     # making calls to the api
 import datetime     # date stamp for csv file
 import sys
@@ -18,7 +18,7 @@ def make_api_call(timestamp, parse_date):
         url += str(timestamp)
         response = requests.get(url)
 
-        if response.status_code == 200:  # everthing went okay
+        if response.status_code == 200:  # everything went okay
             json_response = response.json()  # decode to JSON form
             cad_price = json_response[currency[1]]['CAD']
             usd_price = json_response[currency[1]]['USD']
@@ -44,7 +44,6 @@ def make_api_call(timestamp, parse_date):
 
 
 def main(dates):
-    file_contents = []
     for date in dates:
         with open('tracker.csv', 'r') as f:
             file_contents = f.read().splitlines()
